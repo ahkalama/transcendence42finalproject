@@ -1,5 +1,3 @@
-bak yakarım burayı
-
 function startGame() {
     const canvas = document.getElementById('gameCanvas');
     const scoreBoard = document.getElementById('scoreBoard');
