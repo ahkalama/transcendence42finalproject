@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>TRANSCENDENCE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--navbar başlangıç-->
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <img src="image/WebLogo.png" alt="" class="logo">
+        <a class="navbar-brand text-white" href="#">TRANSCENDENCE</a>
+        <button id="navbarToggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="nav-home" data-translate="home" onclick="changeContent('Home', event)">Home</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="nav-singleplayer" data-translate="singlePlayer" href="#singleplayer" onclick="changeContent('SinglePlayer', event)">Single Player</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="nav-multiplayer" data-translate="multiPlayer" href="#multiplayer" onclick="changeContent('MultiPlayer', event)">Multi Player</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-languages">
+                        <span id="translate-text">Translate</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('es')">Spanish</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setLanguage('tr')">Turkish</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--navbar bitiş-->
+<!--oyun div başlangıc-->
+<main>
+    <div id="content">
+        <img src="image/kedi.jpg" alt="">
+		<h2 data-translate="welcome">Welcome to Transcendence, where your skills are put to the ultimate test. Challenge yourself, compete with others, and rise through the ranks to become the champion. Are you ready to transcend beyond limits?</h2>
+    </div>
+</main>
+<!--oyun div bitiş-->
+
+
+
+<!--ekibimiz başlangıç-->
+<section class="p-5 text-center ekibimiz">
+    <div class="container">
+       
+        <div class="row">
+            <h2 class="mb-4 team-title" id="teamtitle">
+                <span class="line"></span> <!-- Sol çizgi -->
+                <span id="teamtext"  data-translate="teamtitle">Our Team</span> <!-- Metin için ayrı bir span -->
+                <span class="line"></span> <!-- Sağ çizgi -->
+            </h2>
+            <div class="col-md-2">
+                <div class="card " style="width: 100%;">
+                    <img src="image/amert.png" class="card-img-top" alt="Amert">
+                    <div class="card-body">
+                        <h5 class="card-title">AHMET</h5>
+                        <p class="card-text">ahkalama</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card" style="width: 100%;">
+                    <img src="image/nurdan.png" class="card-img-top" alt="Nurdan">
+                    <div class="card-body">
+                        <h5 class="card-title">NURDAN</h5>
+                        <p class="card-text">nsahinog</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card" style="width: 100%;">
+                    <img src="image/seda.png" class="card-img-top" alt="Seda">
+                    <div class="card-body">
+                        <h5 class="card-title">SEDA</h5>
+                        <p class="card-text">sekilinc</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card" style="width: 100%;">
+                    <img src="image/zumrut.png" class="card-img-top" alt="Zumrut">
+                    <div class="card-body">
+                        <h5 class="card-title">ZÜMRÜT</h5>
+                        <p class="card-text">zumgenc</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card" style="width: 100%;">
+                    <img src="image/erc.png" class="card-img-top" alt="Erc">
+                    <div class="card-body">
+                        <h5 class="card-title">ERCAN</h5>
+                        <p class="card-text">ercdeniz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--ekibimiz bitiş-->
+
+   <!-- İletişim bölümü başlangıcı -->
+   <section id="contact" class="p-5">
+    <div class="container text-center">
+        <h2 id="contact-us" data-translate="contactUs">Contact Us</h2> <!-- Çeviri için id eklendi -->
+        <div class="row">
+            <div class="col-md-3">
+                <h5 id="address-label" data-translate="addresslabel">Address</h5> <!-- Çeviri için id eklendi -->
+                <p id="address" data-translate="address">AdMuallimköy Mahallesi, Deniz Cd. No:143-5, 41400 Gebze/Kocaelires</p> <!-- Çeviri için id eklendi -->
+            </div>
+            <div class="col-md-3">
+                <h5 id="phone" data-translate="phone">Phone</h5> <!-- Çeviri için id eklendi -->
+                <p>
+                    <a href="tel:+901234567890" id="phone-label" >+90 123 456 78 90</a> <!-- Çeviri için id eklendi -->
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5 id="email" data-translate="email" >Email</h5> <!-- Çeviri için id eklendi -->
+                <p>
+                    <a href="mailto:info@ornek.com" >ercdeniz@gmail.com</a> <!-- Çeviri için id eklendi -->
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h5 id="map" data-translate="map">Map</h5>
+                <p>
+                    <a href="https://www.google.com.tr/maps/place/42+Kocaeli/@40.7938,29.5059344,15.5z/data=!4m6!3m5!1s0x14cb21395e656283:0xb3868b8918a2484a!8m2!3d40.7925707!4d29.5107064!16s%2Fg%2F11pkf60273?hl=tr&entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Haritada Görüntüle</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- İletişim bölümü bitiş -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="js/aigamepingpong.js"></script>
+<script src="js/language.js"></script>
+<script src="js/multi.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

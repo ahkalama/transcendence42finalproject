@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #1a1a1a, #3b2a55);
+}
+
+main {
+    margin-top: 70px;
+}
+
+.navbar .nav-link {
+    color: white;
+    transition: color 0.3s, text-shadow 0.3s;
+    font-family: 'Orbitron', sans-serif;
+    margin-right: 20px;
+    line-height: 60px;
+}
+
+#navbarToggle {
+    background-color: white;
+    border: 1px solid white;
+}
+
+#navbarToggle:hover {
+    background-color: #d8d8d8;
+}
+
+.nav-link {
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 50px;
+}
+
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar .nav-link:hover {
+    color: #dd25a3;
+    text-shadow: 0 0 10px rgba(94, 255, 0, 0.8);
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+.navbar .dropdown-item {
+    color: black;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #6a0dad;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.team-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+}
+
+.row .team-title {
+    margin-top: 300px;
+    margin-bottom: 20px;
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    background-color: #6a0dad;
+    margin: 0 10px;
+}
+
+.card {
+    box-shadow: 0 8px 10px rgba(115, 112, 112, 0.5);
+    transition: box-shadow 0.3s;
+    height: 100%;
+    margin-top: 100px;
+    margin-left: 50%;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+#content img {
+    width: 250px;
+    height: auto;
+    margin-right: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#content {
+    max-width: 1100px;
+    width: 80%;
+    max-height: 700px;
+    background-color: #d2c2b5;
+    padding: 60px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(89, 16, 113, 0.1);
+    margin-top: 200px;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+}
+
+#content h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #832b83;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+#gameContainer {
+    position: relative;
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#gameCanvas {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.styledCanvas {
+    width: 80%;
+    height: 500px;
+    background-color: #1444a4;
+    border: 2px solid rgb(183, 30, 30);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(175, 54, 54, 0.3);
+}
+
+#scoreBoard {
+    position: absolute;
+    top: 380px;
+    left: 27%;
+    transform: translateX(-20%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(133, 11, 11, 0.5);
+    font-family: 'Orbitron', sans-serif;
+}
+
+#startButton {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    width: 150px;
+    height: 55px;
+    border-radius: 45px;
+    border: none;
+    background-color: rgb(151, 95, 255);
+    color: white;
+    box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
+        0px 5px 10px rgba(5, 5, 5, 0.212),
+        0px -10px 10px rgb(124, 54, 255) inset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 760px;
+    margin-left: 550px;
+}
+
+#startButton:before {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.678);
+    content: "";
+    filter: blur(1px);
+    top: 7px;
+    border-radius: 50%;
+}
+
+#startButton:after {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(249, 59, 227, 0.137);
+    content: "";
+    filter: blur(1px);
+    bottom: 7px;
+    border-radius: 50%;
+}
+
+#startButton:hover {
+    animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* Responsive Multi Button */
+#playerNamesForm button {
+    position: relative;
+    width: 150px;
+    height: 55px;
+    border-radius: 45px;
+    border: none;
+    background-color: rgb(151, 95, 255);
+    color: white;
+    box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
+        0px 5px 10px rgba(5, 5, 5, 0.212),
+        0px -10px 10px rgb(124, 54, 255) inset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#playerNamesForm button:hover {
+    animation: jello-horizontal 0.9s both;
+}
+
+/* Contact */
+#contact {
+    background-color: #d2c2b5;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    color: white;
+    margin-top: 100px;
+}
+
+#contact h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #3f0d40;
+    text-shadow: 2px 2px 4px rgba(70, 68, 69, 0.7);
+}
+
+#contact h5 {
+    color: #3f0d40;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(255, 105, 180, 0.5);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .team-title {
+        font-size: 2rem;
+    }
+
+    #content {
+        flex-direction: column;
+        padding: 30px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #content img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .styledCanvas {
+        width: 100%;
+        height: auto;
+    }
+
+    #gameContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    #scoreBoard {
+        top: 340px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #startButton {
+        margin-left: 45%;
+        top: 700px;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-title {
+        font-size: 1.5rem;
+    }
+
+    #content {
+        padding: 20px;
+    }
+
+    #startButton {
+        margin-left: 35%;
+    }
+
+    #scoreBoard {
+        top: 320px;
+    }
+}
