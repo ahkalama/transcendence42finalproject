@@ -1,0 +1,79 @@
+
+
+h1 {
+    color: rgba(236, 207, 229, 0.976);
+}
+
+.form-container {
+    display: none;
+}
+
+.form-container.active {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #454dd6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c41e61;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+}
+
+p a {
+    color: #cfcf6a;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.language select {
+    background-color: rgba(136, 136, 136, 0.8);
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: 100%;
+    font-size: 16px;
+    color: #dddddd;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+@media (max-width: 400px) {
+    .language select {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,158 @@
+.twofact {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 15px 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: rgba(220, 192, 192, 0.765);
+    border-radius: 5px;
+}
+
+.twofact input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffd1bd;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.twofact input[type="checkbox"]:checked {
+    background-color: #e3794c;
+}
+
+.twofact label {
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.twofact label strong {
+    color: #007bff;
+}
+
+.gdpr-policy {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .gdpr-policy {
+        padding: 15px;
+        margin-top: 15px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gdpr-policy {
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 7px;
+    }
+}
+
+.gdpr-policy {
+    position: relative;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.gdpr-policy {
+    position: relative;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    background-color: #ff5f57;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #ff3b30;
+}
+
+.close-btn::before, .close-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 1px;
+    background-color: white;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-btn::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.gdpr-consent {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #dcc0c0c3;
+    border: 1px solid #ffd1bd;
+    border-radius: 5px;
+}
+
+.gdpr-consent input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffd1bd;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gdpr-consent input[type="checkbox"]:checked {
+    background-color: #e3794c;
+}
+
+.info-icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.info-icon:hover::after {
+    content: "2FA adds an extra layer of security by requiring a secondary verification step.";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: 200px;
+    padding: 8px;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    text-align: center;
+}
