@@ -1,3 +1,5 @@
+![Pink Modern Handwritten Brand Logo](https://github.com/user-attachments/assets/17595423-0650-4a1c-823b-2b59edbcf881)
+
 [ft_trancendence]
 
 Bu proje, içerisinde turnuva modu barındıran orijinal Pong oyununun kopyasının oynanabilir bir versiyonunu web sitesi üzerinden sunmayı amaçlamaktadır. Projede, 3D Pong oyununu Three.js ve WebGL kullanarak render ediyoruz. Web sitesinin altyapısında Django framework kullanılırken, sayfa tasarımı ve düzeni için Bootstrap tercih edilmiştir. Ek olarak, kullanıcı güvenliğini artırmak amacıyla 2 Faktörlü Kimlik Doğrulama (2FA) sistemi uygulanmış ve kullanıcı deneyimini iyileştirmek için çok dilli (multiple language) destek sağlanmıştır. Kullanıcı verilerinin korunmasını ve veri gizliliğini sağlamak amacıyla GDPR Politikası uygulanmıştır.
