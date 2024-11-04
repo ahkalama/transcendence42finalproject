@@ -1,4 +1,4 @@
-![Pink Modern Handwritten Brand Logo](https://github.com/user-attachments/assets/17595423-0650-4a1c-823b-2b59edbcf881)
+![Pink Modern Handwritten Brand Logo (1)](https://github.com/user-attachments/assets/26f08073-b51c-4055-907d-e58ffe73b708)
 
 [ft_trancendence]
 
