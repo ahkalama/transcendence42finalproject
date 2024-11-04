@@ -1,4 +1,5 @@
-![Pink Modern Handwritten Brand Logo (1)](https://github.com/user-attachments/assets/26f08073-b51c-4055-907d-e58ffe73b708)
+
+![Brown and Black Simple Church Event Banner (1)](https://github.com/user-attachments/assets/2d99b1f7-7d4c-4ceb-9d10-2d2794188dd3)
 
 [ft_trancendence]
 
