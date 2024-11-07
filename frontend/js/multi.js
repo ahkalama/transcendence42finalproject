@@ -206,34 +206,7 @@ function startMultiGame() {
     let finalgame = false;
 
     function checkWinner() {
-        if (playerScore === winningScore) {
-            if (!firstRoundWinner) {
-                alert(`${currentPlayer1} wins! will play with ${player3Name}`);
-                firstRoundWinner = currentPlayer1;
-                currentPlayer2 = player3Name;
-            } else if (firstRoundWinner === currentPlayer1) {
-                alert(`${currentPlayer1} wins! Champion of the tournament!`);
-                gameOver = true;
-            } else {
-                alert(`${currentPlayer1} wins! will play the final with ${firstRoundWinner}`);
-                currentPlayer2 = firstRoundWinner;
-            }
-            resetGame();
-        } else if (opponentScore === winningScore) {
-            if (!firstRoundWinner) {
-                alert(`${currentPlayer2} wins! will play with ${player3Name}`);
-                firstRoundWinner = currentPlayer2;
-                currentPlayer1 = currentPlayer2;
-                currentPlayer2 = player3Name;
-            } else if (finalgame === true) {
-                alert(`${currentPlayer2} wins! Champion of the tournament!`);
-                gameOver = true;
-            } else {
-                alert(`${currentPlayer2} wins! will play the final with ${firstRoundWinner}`);
-                finalgame = true;
-            }
-            resetGame();
-        }
+        // See you next time stalker ;)
     }
 
     window.onload = function () {
