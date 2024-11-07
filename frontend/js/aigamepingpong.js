@@ -125,24 +125,7 @@ function startGame() {
     });
 
     function moveOpponentPaddle() {
-        const paddleHalfDepth = paddleDepth / 2;
-        const tableHalfDepth = tableDepth / 2;
-
-        let newPaddlePositionZ = opponentPaddle.position.z;
-
-        if (ball.position.z > opponentPaddle.position.z) {
-            newPaddlePositionZ += paddleMoveSpeed;
-        } else if (ball.position.z < opponentPaddle.position.z) {
-            newPaddlePositionZ -= paddleMoveSpeed;
-        }
-
-        if (newPaddlePositionZ > tableHalfDepth - paddleHalfDepth) {
-            newPaddlePositionZ = tableHalfDepth - paddleHalfDepth;
-        } else if (newPaddlePositionZ < -tableHalfDepth + paddleHalfDepth) {
-            newPaddlePositionZ = -tableHalfDepth + paddleHalfDepth;
-        }
-
-        opponentPaddle.position.z = newPaddlePositionZ;
+        // See you next time stalker ;)
     }
 
     function updateScore() {
