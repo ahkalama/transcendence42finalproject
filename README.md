@@ -2,7 +2,7 @@
 ![Brown and Black Simple Church Event Banner (1)](https://github.com/user-attachments/assets/2d99b1f7-7d4c-4ceb-9d10-2d2794188dd3)
 
 [ft_trancendence]
-ASas
+
 Bu proje, içerisinde turnuva modu barındıran orijinal Pong oyununun kopyasının oynanabilir bir versiyonunu web sitesi üzerinden sunmayı amaçlamaktadır. Projede, 3D Pong oyununu AI Rakip ile Three.js ve WebGL kullanarak render ediyoruz. Web sitesinin altyapısında Django framework kullanılırken, sayfa tasarımı ve düzeni için Bootstrap tercih edilmiştir. Ek olarak, kullanıcı güvenliğini artırmak amacıyla 2 Faktörlü Kimlik Doğrulama (2FA) sistemi uygulanmış ve kullanıcı deneyimini iyileştirmek için çok dilli (multiple language) destek sağlanmıştır. Kullanıcı verilerinin korunmasını ve veri gizliliğini sağlamak amacıyla GDPR Politikası uygulanmıştır.
 
 AI tabanlı bir rakip ile tek oyunculu oyun modu, çok oyunculu oyun modu ve turnuva formatında rekabetçi bir oyun deneyimi sunulmaktadır. Turnuva modu, dört oyuncunun iki eleme maçında karşılaşarak finale yükselen iki oyuncuyu belirlediği bir sistemde çalışmaktadır. Docker ile sitede kullanılacak görseller ve diğer statik dosyalar, sistemin daha hızlı ve verimli çalışabilmesi için konteynerize edilmiştir.
