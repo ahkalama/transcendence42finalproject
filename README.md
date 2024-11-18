@@ -4,7 +4,7 @@
 [ft_trancendence]
 
 Bu proje, içerisinde turnuva modu barındıran orijinal Pong oyununun kopyasının oynanabilir bir versiyonunu web sitesi üzerinden sunmayı amaçlamaktadır. Projede, 3D Pong oyununu AI Rakip ile Three.js ve WebGL kullanarak render ediyoruz. Web sitesinin altyapısında Django framework kullanılırken, sayfa tasarımı ve düzeni için Bootstrap tercih edilmiştir. Ek olarak, kullanıcı güvenliğini artırmak amacıyla 2 Faktörlü Kimlik Doğrulama (2FA) sistemi uygulanmış ve kullanıcı deneyimini iyileştirmek için çok dilli (multiple language) destek sağlanmıştır. Kullanıcı verilerinin korunmasını ve veri gizliliğini sağlamak amacıyla GDPR Politikası uygulanmıştır.
-
+asdas
 AI tabanlı bir rakip ile tek oyunculu oyun modu, çok oyunculu oyun modu ve turnuva formatında rekabetçi bir oyun deneyimi sunulmaktadır. Turnuva modu, dört oyuncunun iki eleme maçında karşılaşarak finale yükselen iki oyuncuyu belirlediği bir sistemde çalışmaktadır. Docker ile sitede kullanılacak görseller ve diğer statik dosyalar, sistemin daha hızlı ve verimli çalışabilmesi için konteynerize edilmiştir.
 
 Bu projede hem Backend hem de Frontend tarafında veritabanı yönetimi, API entegrasyonu, kullanıcı arayüzü geliştirme, oyun mekaniği programlama, hata ayıklama gibi pek çok farklı konuda bilgi ve beceri edindim. Ayrıca, JavaScript, Python ve SQL gibi dillerde yetkinliğimi artırarak, proje yönetimi ve teknik problem çözme becerilerimi de geliştirdim. Tüm bu süreçler, yazılım geliştirme alanındaki genel bilgi birikimime ve kişisel gelişimime büyük katkı sağlamıştır.
