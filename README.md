@@ -1,4 +1,4 @@
-asdas
+
 ![Brown and Black Simple Church Event Banner (1)](https://github.com/user-attachments/assets/2d99b1f7-7d4c-4ceb-9d10-2d2794188dd3)
 
 [ft_trancendence]
