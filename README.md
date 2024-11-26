@@ -18,4 +18,3 @@ A competitive gaming experience is provided with a single-player mode featuring 
 Throughout this project, I gained valuable knowledge and skills in various aspects of both backend and frontend development, including database management, API integration, user interface design, game mechanics programming, and debugging. Furthermore, I enhanced my proficiency in languages such as JavaScript, Python, and SQL, while also developing my project management and technical problem-solving skills. This experience has significantly contributed to my general knowledge in software development and my personal growth.
 
 https://github.com/user-attachments/assets/ceb06e09-b08e-460d-8d91-b3a944bcf483
-asdasd
